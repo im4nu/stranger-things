@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stranger Things</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+</head>
+
+<body class="min-h-screen w-screen max-w-screen overflow-x-hidden flex flex-col">
+  <header class="flex items-center justify-center w-full fixed top-0 left-0 right-0 z-50 bg-white/5 backdrop-blur-sm">
+    <div class="flex flex-row w-4/5 items-center justify-between">
+      <a href="#" class="brand">
+        <img src="assets/images/brands/manu.svg" alt="Stranger Things" class="w-1/2">
+      </a>
+      <a href="#" class="brand">
+        <img src="assets/images/brands/netflix.svg" alt="Netflix">
+      </a>
+    </div>
+  </header>
+
+  <section id="hero" class="flex hero-bg flex-row items-start justify-center min-h-screen px-[10%] pt-[15%] 2xl:pt-[12%]">
+    <div class="flex flex-col w-1/2 items-start gap-2 z-10">
+      <p class="text-xl font-bold xl:text-2xl 2xl:text-3xl font-medium">The experience</p>
+      <h1 class="font-Benguiat text-6xl font-bold pr-12 uppercase xl:text-7xl xl:pr-24 2xl:text-8xl 2xl:pr-32">Stranger Things</h1>
+    </div>
+
+    <div class="flex flex-col w-1/2 items-end gap-4 pt-4 2xl:gap-12 2xl:pt-6 z-20">
+      <p class="text-3xl font-bold text-end w-3/4 2xl:text-4xl font-medium">Descubra os seus poderes e vire o herói de sua própria aventura!</p>
+
+      <div class="border-b hover:border-white border-transparent hover:border-1 border-0 ease-in-out duration-300 flex flex-row items-center justify-center gap-4 p-2">
+        <a href="#" class="capitalize">ESCOLHA SUA CIDADE</a>
+        <img src="assets/images/icons/arrow-up.svg" alt="Arrow Down">
+      </div>
+    </div>
+
+    <img src="assets/images/hero/characters.png" alt="Stranger Things" class="absolute bottom-0 right-0 w-full max-w-full z-10">
+  </section>
+
+  <section id="cities">
+    <header>
+      <div class="flex-row">
+        <span>Escolha sua cidade</span>
+
+        <div class="button-container">
+          <a href="#">Comprar ingressos</a>
+          <img src="assets/images/icons/arrow-down.svg" alt="Arrow Down">
+        </div>
+      </div>
+    
+      <div class="flex-row cities-container">
+        <div class="cities-container sidney">
+          <div class="card-footer">
+            <span>Sidney</span>
+          </div>
+        </div>
+
+        <div class="cities-container mexico">
+          <div class="card-footer">
+            <span>Cidade do México</span>
+          </div>
+        </div>
+
+        <div class="cities-container island">
+          <div class="card-footer">
+            <span>Yas Island</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="flex-row">
+        <img src="assets/images/brands/netflix.svg" alt="Brand">
+        <img src="assets/images/brands/clio.svg" alt="Brand">
+        <img src="assets/images/brands/fever.svg" alt="Brand">
+      </div>
+
+      <div class="flex-row">
+        <div class="brand-card">
+          <img src="assets/images/brands/nbc.png" alt="Brand">
+          <p>"Guests are immersed into an original "Stranger Things" storyline...[it] combines the special effects of a 3D Universal Studios ride with a telekinetic escape room."</p>
+        </div>
+
+        <div class="brand-card">
+          <img src="assets/images/brands/fox.png" alt="Brand">
+          <p>"Immerse yourself on your own adventure with Eleven, Michael, Dustin, Lucas, Max and Will for a very special episode starring none other than you."</p>
+        </div>
+
+        <div class="brand-card">
+          <img src="assets/images/brands/san-francisco.svg" alt="Brand">
+          <p>"The Stranger Things Experience is a scary, endearing, hilarious, and joyous celebration of everything we already love about the show."</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <span>OBRIGADO POR SE JUNTAR A NÓS NESTA AVENTURA EM:</span>
+
+      <ul class="flex-row">
+        <script src="script.js">
+          const cidades = [
+          "Sydney",
+          "Rio de Janeiro",
+          "São Paulo",
+          "Los Angeles",
+          "Nova Iorque",
+          "São Francisco",
+          "Londres",
+          "Atlanta",
+          "Paris",
+          "Toronto",
+          "Seattle"
+        ];
+
+          Array(cidades.length).map((_, index) => {
+            return `
+            <li class="card-footer">
+              <span>${cidades[index]}</span>
+            </li>
+            `;
+          });
+        </script>
+      </ul>
+    </footer>
+  </section>
+
+  <footer>
+    <div class="flex-row">
+      <div class="flex-col">
+        <p>The experience</p>
+        <h1>Stranger Things</h1>
+      </div>
+
+      <div class="flex-col">
+        <p>Redes sociais</p>
+
+        <ul>
+          <li><a href="#"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a></li>
+          <li><a href="#"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a></li>
+          <li><a href="#"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a></li>
+        </ul>
+      </div>
+
+      <div class="flex-col">
+        <span>PARCEIRO DE MÍDIA</span>
+
+        <img src="assets/images/brands/secreat-media-network.svg" alt="Brand">
+      </div>
+
+      <div class="flex-col">
+        <span>Institucional</span>
+
+        <nav>
+          <ul>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Imprensa</a></li>
+            <li><a href="#">Parcerias</a></li>
+            <li><a href="#">Influenciadores</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="flex-row">
+      <img src="assets/images/brands/netflix.svg" alt="Brand">
+      <img src="assets/images/brands/fever.svg" alt="Brand">
+    </div>
+
+    <span>THE EXPERIENCE THE EXPERIENCE</span>
+  </footer>
+</body>
+
+</html>

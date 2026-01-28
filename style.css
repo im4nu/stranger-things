@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Benguiat';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Benguiat'), url('assets/fonts/benguiat_[allfont.net].woff') format('woff');
+  }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  color: #ffffffe0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  background-color: black;
+  font-size: 16px;
+}
+
+.font-Benguiat{
+  font-family: 'Benguiat';
+}
+
+.hero-bg{
+  background-image: url('assets/images/hero/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
