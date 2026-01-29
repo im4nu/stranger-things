@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body{
   display: flex;
   flex-direction: column;
@@ -69,16 +74,31 @@ body{
   background-repeat: no-repeat;
 }
 
-#footer-scroll{
-  animation: footer-scroll-animation 10s linear infinite;
-  mix-blend-mode: difference; 
+.footer-marquee {
+  width: 100%;
+  overflow: hidden;
+  mix-blend-mode: difference;
 }
 
-@keyframes footer-scroll-animation {
-  0% {
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track span {
+  white-space: nowrap;
+  margin-right: 2rem;
+  font-size: clamp(3rem, 6vw, 9rem);
+  font-weight: bold;
+}
+
+@keyframes marquee {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-100%);
+  to {
+    transform: translateX(-50%);
   }
 }
