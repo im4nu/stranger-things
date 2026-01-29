@@ -33,3 +33,31 @@ body{
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.sidney-bg{
+  background-image: url('assets/images/cards/sidney.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mexico-bg{
+  background-image: url('assets/images/cards/mexico.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.island-bg{
+  background-image: url('assets/images/cards/island.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cities-bg{
+  background-image: url('assets/images/cities-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
