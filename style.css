@@ -61,3 +61,24 @@ body{
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.footer-bg{
+  background-image: url('assets/images/footer-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#footer-scroll{
+  animation: footer-scroll-animation 10s linear infinite;
+  mix-blend-mode: difference; 
+}
+
+@keyframes footer-scroll-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
